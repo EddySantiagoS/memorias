@@ -1,0 +1,75 @@
+body {
+  background: #393332;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  height: 100vh;
+}
+
+.videos-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  transition: margin-left 0.3s ease; /* Transición suave para el margen izquierdo */
+  margin-left: 5px; /* Espacio inicial desde el margen izquierdo */
+}
+
+.videos-list-item {
+  margin-right: 300px;
+  margin-top: 200px;
+  width: 300px;
+  height: 200px;
+  transition: transform 0.3s ease; /* Transición suave para transform */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los videos */
+}
+
+.videos-list-item.selected {
+  border: 2px solid red;
+  transform: scale(
+    1.1
+  ); /* Hace que el video seleccionado sea un poco más grande */
+}
+
+#youtube-player {
+  margin-top: 20px; /* Ajusta la separación entre la lista de videos y el reproductor de YouTube */
+}
+
+#selected-video-image {
+  width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Mantiene la proporción del aspecto de la imagen */
+  display: none; /* Inicialmente oculta la imagen */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.logo img {
+  width: 90px;
+  height: auto;
+}
+.button {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde el borde superior según tus preferencias */
+  right: 10px; /* Ajusta la distancia desde el borde derecho según tus preferencias */
+  display: inline-block;
+  padding: 30px 60px;
+  background-color: #731a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#professor-image {
+  display: flex; /* Para ocultar la imagen inicialmente */
+  width: auto; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: 230px; /* Esto mantiene la proporción de aspecto */
+  margin-top: 600px; /* Agrega un margen superior para separar la imagen del video */
+  margin-left: 200px;
+}
